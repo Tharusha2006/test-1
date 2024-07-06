@@ -1,0 +1,113 @@
+:root {
+    --back-cl: #dbe0ff;
+    --blue-d: #124e66;
+    --dark: #2e3944;
+    --blue-ll: #267c9e;
+    --font: 'General Sans', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--back-cl);
+}
+.main-view-port {
+    overflow: hidden;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--dark);
+    padding: 6px 18px;
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: var(--font);
+    font-weight: 300;
+    transition: .3s;
+}
+.nav-links a:nth-child(3) {
+    color: #fff;
+    background-color: var(--blue-d);
+}
+.nav-links a:hover {
+    background-color: var(--blue-d);
+    color: #fff;
+    padding: 6px 24px;
+}
+.main-text h1{
+    width: 100%;
+    font-size: 80px;
+    color: var(--blue-ll);
+    font-family: var(--font);
+}
+.main-text p {
+    width: 700px;
+    font-size: 17px;
+    font-family: var(--font);
+    font-weight: 300;
+}
+
+.main-text img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    animation: down 1s linear infinite;
+    background-color: #dbe0ff;
+    border-radius: 50%;
+}
+.main-about h1 {
+    padding: 10px 40px;
+    font-size: 150px;
+    text-align: right;
+    font-family: var(--font);
+    color: var(--blue-d);
+    opacity: .3;
+    font-weight: bold;
+}
+.all-box-about > .box-1,.box-2 {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    background-color: #dbe0ff;
+}
+@keyframes down {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(3px);}
+    100%{transform: translateY(0px);}
+}
+@media screen and (max-width: 768px) and (max-width: 460px) {
+    .main-view-port {
+        width: 99%;
+        height: auto;
+    }
+    .nav-links a {
+        padding: 6px 8px;
+        font-size: 16px;
+    }
+    .main-text {
+        height: 700px;
+    }
+    .main-text-h1-p h1{
+        font-size: 50px;
+    }
+    .main-text-h1-p p {
+        width: 99%;
+        font-size: 15px;
+    }
+    .main-about h1 {
+        font-size: 50px;
+    }
+    .all-box-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .all-box-about > .box-1,.box-2 {
+        margin-top: 10px;
+    }
+}
