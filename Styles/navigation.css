@@ -109,5 +109,6 @@ body {
     }
     .all-box-about > .box-1,.box-2 {
         margin-top: 10px;
+        width: 100%;
     }
 }
